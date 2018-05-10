@@ -10,6 +10,18 @@ class Transfer
     @amount = 50
   end
 
+  def sender
+    @sender
+  end
+
+  def receiver
+    @receiver
+  end
+
+  def amount
+    @amount
+  end
+
   def valid?
     sender.valid? && receiver.valid? ? true : false
   end
