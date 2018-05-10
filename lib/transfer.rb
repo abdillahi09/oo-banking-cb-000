@@ -22,7 +22,7 @@
     end
 
     def valid?
-      self.sender.valid? && self.receiver.valid? && (self.sender.balance > self.amount)
+      sender.valid? && receiver.valid? ? true : false
     end
 
     def execute_transaction
